@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="9.5">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="258" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>url</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="ReviewSK" selected="False" />
+              <Field name="UserSK" selected="False" />
+              <Field name="BusinessSK" selected="False" />
+              <Field name="Date" selected="False" />
+              <Field name="Stars" selected="False" />
+              <Field name="text" selected="False" />
+              <Field name="ZipCode" selected="False" />
+              <Field name="url" selected="False" />
+              <Field name="Address" selected="False" />
+              <Field name="Latitude" selected="False" />
+              <Field name="Longitude" selected="False" />
+              <Field name="Review ID" selected="False" />
+              <Field name="User ID" selected="False" />
+              <Field name="Business ID" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues>
+              <Item name="sentiment" value="1" />
+              <Item name="apikey" value="4ffeef67211639d399da58e99613528ed28f8782" />
+            </ComposeNameValues>
+            <ComposeFields orderChanged="False">
+              <Field name="text" />
+              <Field name="ReviewSK" selected="False" />
+              <Field name="UserSK" selected="False" />
+              <Field name="BusinessSK" selected="False" />
+              <Field name="Date" selected="False" />
+              <Field name="Stars" selected="False" />
+              <Field name="ZipCode" selected="False" />
+              <Field name="url" selected="False" />
+              <Field name="Address" selected="False" />
+              <Field name="Latitude" selected="False" />
+              <Field name="Longitude" selected="False" />
+              <Field name="Review ID" selected="False" />
+              <Field name="User ID" selected="False" />
+              <Field name="Business ID" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+        <Position x="354" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <XMLField>DownloadData</XMLField>
+          <XMLElement>keyword</XMLElement>
+          <ChildValues value="True" />
+          <OuterXML value="True" />
+          <ParseRoot value="False" />
+          <IgnoreErrors value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ReviewSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="UserSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="Date" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Stars" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="text" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="ZipCode" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="url" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Address" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Latitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Longitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Review ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="User ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Business ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="keyword" size="48" type="V_String" />
+            <Field name="relevance" size="8" type="V_String" />
+            <Field name="relevance_OuterXML" size="31" type="V_String" />
+            <Field name="sentiment" size="64" type="V_String" />
+            <Field name="sentiment_OuterXML" size="150" type="V_String" />
+            <Field name="text2" size="37" type="V_String" />
+            <Field name="text_OuterXML" size="50" type="V_String" />
+            <Field name="keyword_OuterXML" size="275" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+        <Position x="534" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <XMLField>keyword_OuterXML</XMLField>
+          <XMLElement>sentiment</XMLElement>
+          <ChildValues value="True" />
+          <OuterXML value="False" />
+          <ParseRoot value="False" />
+          <IgnoreErrors value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ReviewSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="UserSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="Date" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Stars" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="text" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="ZipCode" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="url" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Address" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Latitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Longitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Review ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="User ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Business ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="relevance" type="Float" />
+            <Field name="sentiment" size="64" type="V_String" />
+            <Field name="sentiment_OuterXML" size="150" type="V_String" />
+            <Field name="Keyword" size="37" type="V_String" />
+            <Field name="text_OuterXML" size="50" type="V_String" />
+            <Field name="keyword_OuterXML" size="275" type="V_String" />
+            <Field name="sentiment2" size="64" type="V_String" />
+            <Field name="score" size="11" type="V_String" />
+            <Field name="type" size="8" type="V_String" />
+            <Field name="mixed" size="1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="702" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[FindString([Keyword],"food") > -1 || 
+FindString([Keyword],"taste") > -1 ||
+FindString([Keyword],"meal") > -1 ||
+FindString([Keyword],"lunch") > -1 || 
+FindString([Keyword],"dinner") > -1 ||
+FindString([Keyword],"location") > -1 ||
+FindString([Keyword],"locate") > -1 || 
+FindString([Keyword],"convenien") > -1 ||
+FindString([Keyword],"atmosphere") > -1 || 
+FindString([Keyword],"decor") > -1 ||
+FindString([Keyword],"environment") > -1 ||
+FindString([Keyword],"ambiance") > -1 ||
+FindString([Keyword],"ambience") > -1 ||
+FindString([Keyword],"quality") > -1 ||
+FindString([Keyword],"fresh") > -1 ||
+FindString([Keyword],"ingredient") > -1 ||
+FindString([Keyword],"service") > -1 ||  
+FindString([Keyword],"price") > -1 ||
+FindString([Keyword],"value") > -1 ||
+FindString([Keyword],"quantity") > -1 ||
+FindString([Keyword],"economic") > -1 ||
+FindString([Keyword],"restaurant") > -1 ||
+FindString([Keyword],"restaurent") > -1 ||
+FindString([Keyword],"place") > -1 ||
+FindString([Keyword],"menu") > -1 ||
+FindString([Keyword],"variety") > -1 ||
+FindString([Keyword],"choice") > -1 ||
+FindString([Keyword],"selection") > -1 ||
+FindString([Keyword],"owner") > -1 ||
+FindString([Keyword],"staff") > -1 ||
+FindString([Keyword],"friendl") > -1 ||
+FindString([Keyword],"speed") > -1 ||
+FindString([Keyword],"quick") > -1 ||
+FindString([Keyword],"slow") > -1 ||
+FindString([Keyword],"respons") > -1 ||
+FindString([Keyword],"time") > -1 ||
+FindString([Keyword],"order") > -1 ||
+FindString([Keyword],"accura") > -1 ||
+FindString([Keyword],"deal") > -1 ||
+FindString([Keyword],"discount") > -1 ||
+FindString([Keyword],"reward") > -1 ||
+FindString([Keyword],"loyalty") > -1 ||
+FindString([Keyword],"clean") > -1 ||
+FindString([Keyword],"neat") > -1 ||
+FindString([Keyword],"tidy") > -1 ||
+FindString([Keyword],"hygiene") > -1 ]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FindString([Keyword],"food") &gt; -1 || 
+FindString([Keyword],"t...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="786" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Keyword" type="V_String" size="31" expression="IF FindString([Keyword],&quot;food&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Taste') &#xA;ELSEIF FindString([Keyword],&quot;taste&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Taste') &#xA;ELSEIF FindString([Keyword],&quot;meal&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Taste') &#xA;ELSEIF FindString([Keyword],&quot;lunch&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Taste') &#xA;ELSEIF FindString([Keyword],&quot;dinner&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Taste') &#xA;ELSEIF FindString([Keyword],&quot;location&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Location') &#xA;ELSEIF FindString([Keyword],&quot;locate&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Location') &#xA;ELSEIF FindString([Keyword],&quot;convenien&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Location')&#xA;ELSEIF FindString([Keyword],&quot;atmosphere&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Decor') &#xA;ELSEIF FindString([Keyword],&quot;decor&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Decor') &#xA;ELSEIF FindString([Keyword],&quot;environment&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Decor') &#xA;ELSEIF FindString([Keyword],&quot;ambiance&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Decor') &#xA;ELSEIF FindString([Keyword],&quot;ambience&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Decor')&#xA;ELSEIF FindString([Keyword],&quot;quality&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Quality') &#xA;ELSEIF FindString([Keyword],&quot;fresh&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Quality')&#xA;ELSEIF FindString([Keyword],&quot;ingredient&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Quality')&#xA;ELSEIF FindString([Keyword],&quot;service&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Service')  &#xA;ELSEIF FindString([Keyword],&quot;price&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Worth')&#xA;ELSEIF FindString([Keyword],&quot;value&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Worth')&#xA;ELSEIF FindString([Keyword],&quot;quantity&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Worth')&#xA;ELSEIF FindString([Keyword],&quot;economic&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Worth')&#xA;ELSEIF FindString([Keyword],&quot;restaurant&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Reputation')&#xA;ELSEIF FindString([Keyword],&quot;restaurent&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Reputation')&#xA;ELSEIF FindString([Keyword],&quot;place&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Reputation') &#xA;ELSEIF FindString([Keyword],&quot;menu&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Variety')&#xA;ELSEIF FindString([Keyword],&quot;variety&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Variety')&#xA;ELSEIF FindString([Keyword],&quot;choice&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Variety')&#xA;ELSEIF FindString([Keyword],&quot;selection&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Variety')&#xA;ELSEIF FindString([Keyword],&quot;owner&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Friendly')&#xA;ELSEIF FindString([Keyword],&quot;staff&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Friendly')&#xA;ELSEIF FindString([Keyword],&quot;friendl&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Friendly')&#xA;ELSEIF FindString([Keyword],&quot;speed&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Speed')&#xA;ELSEIF FindString([Keyword],&quot;quick&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Speed')&#xA;ELSEIF FindString([Keyword],&quot;slow&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Speed')&#xA;ELSEIF FindString([Keyword],&quot;respons&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Speed')&#xA;ELSEIF FindString([Keyword],&quot;time&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Speed')&#xA;ELSEIF FindString([Keyword],&quot;order&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Accuracy')&#xA;ELSEIF FindString([Keyword],&quot;accura&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Accuracy')&#xA;ELSEIF FindString([Keyword],&quot;deal&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Rewards')&#xA;ELSEIF FindString([Keyword],&quot;discount&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Rewards')&#xA;ELSEIF FindString([Keyword],&quot;reward&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Rewards')&#xA;ELSEIF FindString([Keyword],&quot;loyalty&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Rewards')&#xA;ELSEIF FindString([Keyword],&quot;clean&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Hygiene')&#xA;ELSEIF FindString([Keyword],&quot;neat&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Hygiene')&#xA;ELSEIF FindString([Keyword],&quot;tidy&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Hygiene')&#xA;ELSEIF FindString([Keyword],&quot;hygiene&quot;) &gt; -1 THEN Replace([Keyword],[Keyword], 'Hygiene')&#xA;ELSE Replace([Keyword],[Keyword], 'none') ENDIF" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Keyword=IF FindString([Keyword],"food") &gt; -1 THEN Replace([Ke...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="870" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="ReviewSK" />
+            <Field field="UserSK" />
+            <Field field="BusinessSK" />
+            <Field field="Date" />
+            <Field field="Stars" />
+            <Field field="text" />
+            <Field field="ZipCode" />
+            <Field field="Sentiment Type" />
+          </GroupFields>
+          <HeaderField field="Keyword" />
+          <DataField field="relevance" />
+          <Methods>
+            <Method method="Avg" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ReviewSK" source="CrossTab:Group:Avg:" type="Int32" />
+            <Field name="UserSK" source="CrossTab:Group:Avg:" type="Int32" />
+            <Field name="BusinessSK" source="CrossTab:Group:Avg:" type="Int32" />
+            <Field name="Date" size="16777216" source="CrossTab:Group:Avg:" type="V_WString" />
+            <Field name="Stars" size="16777216" source="CrossTab:Group:Avg:" type="V_WString" />
+            <Field name="text" size="16777216" source="CrossTab:Group:Avg:" type="V_WString" />
+            <Field name="ZipCode" size="32" source="CrossTab:Group:Avg:" type="V_WString" />
+            <Field name="Sentiment Type" size="8" source="CrossTab:Group:Avg:" type="V_String" />
+            <Field name="Avg_Accuracy" source="CrossTab:Header:Keyword:Accuracy:Avg:" type="Double" />
+            <Field name="Avg_Decor" source="CrossTab:Header:Keyword:Decor:Avg:" type="Double" />
+            <Field name="Avg_Friendly" source="CrossTab:Header:Keyword:Friendly:Avg:" type="Double" />
+            <Field name="Avg_Hygiene" source="CrossTab:Header:Keyword:Hygiene:Avg:" type="Double" />
+            <Field name="Avg_Location" source="CrossTab:Header:Keyword:Location:Avg:" type="Double" />
+            <Field name="Avg_Quality" source="CrossTab:Header:Keyword:Quality:Avg:" type="Double" />
+            <Field name="Avg_Reputation" source="CrossTab:Header:Keyword:Reputation:Avg:" type="Double" />
+            <Field name="Avg_Rewards" source="CrossTab:Header:Keyword:Rewards:Avg:" type="Double" />
+            <Field name="Avg_Service" source="CrossTab:Header:Keyword:Service:Avg:" type="Double" />
+            <Field name="Avg_Speed" source="CrossTab:Header:Keyword:Speed:Avg:" type="Double" />
+            <Field name="Avg_Taste" source="CrossTab:Header:Keyword:Taste:Avg:" type="Double" />
+            <Field name="Avg_Variety" source="CrossTab:Header:Keyword:Variety:Avg:" type="Double" />
+            <Field name="Avg_Worth" source="CrossTab:Header:Keyword:Worth:Avg:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ReviewSK" order="Asc" />
+            <Field field="UserSK" order="Asc" />
+            <Field field="BusinessSK" order="Asc" />
+            <Field field="Date" order="Asc" />
+            <Field field="Stars" order="Asc" />
+            <Field field="text" order="Asc" />
+            <Field field="ZipCode" order="Asc" />
+            <Field field="Sentiment Type" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_6168_51fefc0f25e74e9495e658b7580da92d\Engine_4996_96a41906517b4f5fbcddf50cae7af136.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="918" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_6168_51fefc0f25e74e9495e658b7580da92d\Engine_4996_a73b60dd7a474c4081f25d44a1070935.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_6168_51fefc0f25e74e9495e658b7580da92d\Engine_4996_edc7d3334eeb4c2a838a3fcdc0110b50.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_6168_51fefc0f25e74e9495e658b7580da92d\Engine_4996_2c90840beae2457abc617a789553e162.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=SONALJAIN-PC\SONAL
+Catalog=Yelp Reviews
+Table=Select * From [Madison Restaurant Reviews]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ReviewSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="UserSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="Date" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Stars" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="text" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="ZipCode" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="url" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Address" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Latitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Longitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Review ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="User ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Business ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="ReviewSK" selected="True" />
+            <SelectField field="UserSK" selected="True" />
+            <SelectField field="BusinessSK" selected="True" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="Stars" selected="True" />
+            <SelectField field="text" selected="True" />
+            <SelectField field="ZipCode" selected="True" />
+            <SelectField field="url" selected="True" />
+            <SelectField field="Address" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="Review ID" selected="True" />
+            <SelectField field="User ID" selected="True" />
+            <SelectField field="Business ID" selected="True" />
+            <SelectField field="DownloadData" selected="True" />
+            <SelectField field="relevance" selected="True" type="Float" size="4" />
+            <SelectField field="sentiment" selected="True" />
+            <SelectField field="sentiment_OuterXML" selected="True" />
+            <SelectField field="text2" selected="True" rename="Keyword" />
+            <SelectField field="text_OuterXML" selected="True" />
+            <SelectField field="keyword_OuterXML" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_6168_51fefc0f25e74e9495e658b7580da92d\Engine_4996_e69f187834e04bd6837415a6c13e0219.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="type" selected="True" rename="Sentiment Type" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1050" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Madison Restaurant Review Statistics</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>0</TransactionSize>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=SONALJAIN-PC\SONAL
+Catalog=Yelp Reviews
+Table=Madison Restaurant Review Statistics</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ReviewSK] &gt; 29830</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ReviewSK] &gt; 29830</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="954" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>43622</StartValue>
+          <FieldName>RSKey</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="234" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_6168_51fefc0f25e74e9495e658b7580da92d\Engine_4996_268f675e10d04f0994961c407436c14b.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Sentiment Extractor</Name>
+      <Description />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,1455 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="9.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=SONALJAIN-PC\SONAL
+Catalog=Yelp Reviews
+Table=Select * From [Madison Restaurant Businesses]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="Int32" />
+            <Field name="Business ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="V_WString" />
+            <Field name="Business Name" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="V_WString" />
+            <Field name="Address" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="V_WString" />
+            <Field name="Longitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="Float" />
+            <Field name="Latitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="Float" />
+            <Field name="Zip Code" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Businesses]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=SONALJAIN-PC\SONAL
+Catalog=Yelp Reviews
+Table=Select * From [Madison Restaurants CheckIns Data]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BCKey" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="Int32" />
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="Int32" />
+            <Field name="Business_ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="V_WString" />
+            <Field name="Total CheckIns" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="Int32" />
+            <Field name="Day of Week" size="9" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="String" />
+            <Field name="Hour Range" size="13" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="String" />
+            <Field name="Zip Code" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurants CheckIns Data]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=SONALJAIN-PC\SONAL
+Catalog=Yelp Reviews
+Table=Select * From [Madison Restaurant Review Statistics]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RSKey" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Int32" />
+            <Field name="ReviewSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Int32" />
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Int32" />
+            <Field name="UserSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Int32" />
+            <Field name="Date" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="Stars" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="text" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="Sentiment Type" size="8" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_String" />
+            <Field name="Avg_Accuracy" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Decor" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Friendly" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Hygiene" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Location" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Quality" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Reputation" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Rewards" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Service" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Speed" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Taste" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Variety" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="Avg_Worth" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="Double" />
+            <Field name="ZipCode" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="url" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="Review ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="Business ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+            <Field name="User ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Review Statistics]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="150" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Zip Code" action="GroupBy" rename="Zip Code" />
+            <SummarizeField field="Business ID" action="Count" rename="Total Restaurants in Zip Code" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="162" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Zip Code" action="GroupBy" rename="Zip Code" />
+            <SummarizeField field="Total CheckIns" action="Sum" rename="Total Restaurants CheckIns in Zip Code" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="162" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ZipCode" action="GroupBy" rename="ZipCode" />
+            <SummarizeField field="Sentiment Type" action="GroupBy" rename="Sentiment Type" />
+            <SummarizeField field="Avg_Taste" action="Sum" rename="Total Taste Sentiments in Zip Code" />
+            <SummarizeField field="Avg_Location" action="Sum" rename="Total Location Sentiments in Zip Code" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_a8da999214d445a68e9d3cb18bfc2527.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="258" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_0d62f320e3f44dd0b78b386835c88994.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="258" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_71d18db4716048c1b32aeb7695dc7523.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=SONALJAIN-PC\SONAL
+Catalog=Yelp Reviews
+Table=Select * From [Madison Restaurant Reviews]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ReviewSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="UserSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="BusinessSK" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Int32" />
+            <Field name="Date" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Stars" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="text" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="ZipCode" size="32" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="url" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Address" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Latitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Longitude" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="Float" />
+            <Field name="Review ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="User ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+            <Field name="Business ID" size="16777216" source="File: odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Yelp Reviews;Data Source=SONALJAIN-PC\SONAL;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=SONALJAIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False|Select * From [Madison Restaurant Reviews]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="150" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ZipCode" action="GroupBy" rename="ZipCode" />
+            <SummarizeField field="ReviewSK" action="Count" rename="Total Restaurant Reviews in Zip Code" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_23b3b42ad3284a8e88361fb0e8f0c712.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="294" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="Zip Code" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="Zip Code" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="ZipCode" />
+            </JoinInfo>
+            <JoinInfo connection="#4">
+              <Field field="ZipCode" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_Zip Code" selected="True" />
+                <SelectField field="Input_#1_Total Restaurants in Zip Code" selected="True" />
+                <SelectField field="Input_#2_Zip Code" selected="False" rename="Input_#2_Zip Code" />
+                <SelectField field="Input_#2_Total Restaurants CheckIns in Zip Code" selected="True" />
+                <SelectField field="Input_#3_Sentiment Type" selected="True" />
+                <SelectField field="Input_#3_Total Taste Sentiments in Zip Code" selected="True" />
+                <SelectField field="Input_#3_Total Location Sentiments in Zip Code" selected="True" />
+                <SelectField field="Input_#4_ZipCode" selected="False" rename="Input_#4_ZipCode" />
+                <SelectField field="Input_#4_Total Restaurant Reviews in Zip Code" selected="True" />
+                <SelectField field="Input_#4_Total Restaurants in Zip Code" selected="False" rename="Input_#4_Total Restaurants in Zip Code" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Average Taste Sentiment" type="Float" size="4" expression="[Total Taste Sentiments in Zip Code]/([Total Restaurant Reviews in Zip Code]/[Total Restaurants in Zip Code])" />
+            <FormulaField field="Average Location Sentiment" type="Float" size="4" expression="[Total Location Sentiments in Zip Code]/([Total Restaurant Reviews in Zip Code]/[Total Restaurants in Zip Code])" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Average Taste Sentiment=[Total Taste Sentiments in Zip Code]/...
+Average Location Sentiment=[Total Location Sentiments in Zip ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Sentiment Type</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>positive</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Sentiment Type] = "positive"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="594" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Sentiment Type</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>negative</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Sentiment Type] = "negative"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="486" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Sentiment Type</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>neutral</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Sentiment Type] = "neutral"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="714" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_eb5be2a2b85b460f8c20943f8cd5484a.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings>
+        <Position x="618" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Restaurants CheckIns in Zip Code</Value>
+          <Value name="y var">Average Taste Sentiment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Zip Code</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings>
+        <Position x="618" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Restaurants CheckIns in Zip Code</Value>
+          <Value name="y var">Average Location Sentiment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Zip Code</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="714" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_72c399e6b8fe48ad9b5b625fb5d311fc.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_1e6c88b47a944dee9fced9a9280d479a.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings>
+        <Position x="822" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Restaurants CheckIns in Zip Code</Value>
+          <Value name="y var">Average Taste Sentiment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Zip Code</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings>
+        <Position x="810" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Restaurants CheckIns in Zip Code</Value>
+          <Value name="y var">Average Location Sentiment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Zip Code</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_29f281956dd24397b8aa41cc62423b24.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_7e35c0c65eb341d8b1c63a33a5a12505.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings>
+        <Position x="606" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Restaurants CheckIns in Zip Code</Value>
+          <Value name="y var">Average Taste Sentiment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Zip Code</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings>
+        <Position x="606" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Restaurants CheckIns in Zip Code</Value>
+          <Value name="y var">Average Location Sentiment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Zip Code</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_fae4e8f046194530aa3a59c163161063.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+        <Position x="606" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields orderChanged="False">
+            <Field name="Total Restaurants CheckIns in Zip Code" />
+            <Field name="Average Taste Sentiment" />
+            <Field name="Total Restaurants in Zip Code" selected="False" />
+            <Field name="Total Taste Sentiments in Zip Code" selected="False" />
+            <Field name="Total Location Sentiments in Zip Code" selected="False" />
+            <Field name="Total Restaurant Reviews in Zip Code" selected="False" />
+            <Field name="Average Location Sentiment" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Covariance value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_cde7c329d38b4f3392974203ec9aa1c5.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+        <Position x="606" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields orderChanged="False">
+            <Field name="Total Restaurants CheckIns in Zip Code" />
+            <Field name="Average Location Sentiment" />
+            <Field name="Total Restaurants in Zip Code" selected="False" />
+            <Field name="Total Taste Sentiments in Zip Code" selected="False" />
+            <Field name="Total Location Sentiments in Zip Code" selected="False" />
+            <Field name="Total Restaurant Reviews in Zip Code" selected="False" />
+            <Field name="Average Taste Sentiment" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Covariance value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_37c302bbe1874e60a141ae6627801165.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+        <Position x="810" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields orderChanged="False">
+            <Field name="Total Restaurants CheckIns in Zip Code" />
+            <Field name="Average Taste Sentiment" />
+            <Field name="Total Restaurants in Zip Code" selected="False" />
+            <Field name="Total Taste Sentiments in Zip Code" selected="False" />
+            <Field name="Total Location Sentiments in Zip Code" selected="False" />
+            <Field name="Total Restaurant Reviews in Zip Code" selected="False" />
+            <Field name="Average Location Sentiment" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Covariance value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_77e0ae4426644247b377124ce49d139d.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+        <Position x="810" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields orderChanged="False">
+            <Field name="Total Restaurants CheckIns in Zip Code" />
+            <Field name="Average Location Sentiment" />
+            <Field name="Total Restaurants in Zip Code" selected="False" />
+            <Field name="Total Taste Sentiments in Zip Code" selected="False" />
+            <Field name="Total Location Sentiments in Zip Code" selected="False" />
+            <Field name="Total Restaurant Reviews in Zip Code" selected="False" />
+            <Field name="Average Taste Sentiment" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Covariance value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_6d566772d3c3484f9c0e884550f8a2cf.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+        <Position x="606" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields orderChanged="False">
+            <Field name="Total Restaurants CheckIns in Zip Code" />
+            <Field name="Average Taste Sentiment" />
+            <Field name="Total Restaurants in Zip Code" selected="False" />
+            <Field name="Total Taste Sentiments in Zip Code" selected="False" />
+            <Field name="Total Location Sentiments in Zip Code" selected="False" />
+            <Field name="Total Restaurant Reviews in Zip Code" selected="False" />
+            <Field name="Average Location Sentiment" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Covariance value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_aa950e2de6854d4892f836fea96d6c61.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+        <Position x="606" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields orderChanged="False">
+            <Field name="Total Restaurants CheckIns in Zip Code" />
+            <Field name="Average Location Sentiment" />
+            <Field name="Total Restaurants in Zip Code" selected="False" />
+            <Field name="Total Taste Sentiments in Zip Code" selected="False" />
+            <Field name="Total Location Sentiments in Zip Code" selected="False" />
+            <Field name="Total Restaurant Reviews in Zip Code" selected="False" />
+            <Field name="Average Taste Sentiment" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Covariance value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SONALJ~1\AppData\Local\Temp\Engine_2500_7832fba4f04449149e0d60f664736660\Engine_9380_9e696119539f493a97e87add1f9fb067.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="558" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="42" MaxRecords="">C:\Users\Sonal Jain\Desktop\606 Final Project\Location Mining.tde</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Location Mining.tde</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="61" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="62" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="65" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="66" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="True" />
+      <Destination ToolID="69" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="True" />
+      <Destination ToolID="70" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="True" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Scater Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Scater Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Scater Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Scater Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Scater Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Scater Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Correlation</Name>
+      <Description />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
